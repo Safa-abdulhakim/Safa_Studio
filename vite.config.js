@@ -1,12 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import svgr from '@svgr/rollup';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  base: '/Safa_Studio/',
-  plugins: [react(), svgr()],
-  server: {
-    port: 3000,
-  }
+  plugins: [react()],
+  base: '/Safa_Studio/' // ضع اسم المستودع هنا
 })
